@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Gzeven/password-generator-app)
-- Live Site URL: (https://password-generator-app-puce.vercel.app/)
+- Live Site URL: (https://password-generator-app-lemon.vercel.app//)
 
 ## My process
 
