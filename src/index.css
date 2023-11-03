@@ -1,3 +1,21 @@
+@import-normalize; /* bring in normalize.css styles */
+
+/* rest of app styles */
+
+@font-face {
+  font-family: 'JetBrainsMono-VariableFont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-Italic-VariableFont';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +23,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'JetBrainsMono-VariableFont', sans-serif;
+    background-color: var(--color-very-dark-grey);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+/* Define color variables */
+:root {
+  --color-red: hsl(0, 91%, 63%);
+  --color-orange: hsl(13, 95%, 66%);;
+  --color-yellow: hsl(42, 91%, 68%);;
+  --color-neon-green: hsl(127, 100%, 82%);;
+  --color-almost-white: hsl(252, 11%, 91%);;
+  --color-grey: hsl(251, 9%, 53%);
+  --color-dark-grey: hsl(248, 10%, 15%);;
+  --color-very-dark-grey: hsl(248, 15%, 11%);;
+}
+
+h1 {
+  font-size: 16px;
+  color: var(--color-grey);
+  margin:0;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    }
+  
+}
+
+h4 {
+  color: var(--color-almost-white);
+  opacity: 0.25;
+}
+
+.svg-container:hover svg {
+  fill: red; /* Change the color on hover */
+}
+
+
+
+
