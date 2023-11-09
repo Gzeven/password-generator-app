@@ -30,8 +30,12 @@ align-items: center;
 
 const CopiedText = styled.span`
   margin-right: 8px; /* Add some margin between the text and the image */
-  font-size: 18px;
+  font-size: 10px;
   color: var(--color-neon-green);
+
+  @media (min-width: 475px) {
+    font-size: 18px;
+  }
 
 `;
 

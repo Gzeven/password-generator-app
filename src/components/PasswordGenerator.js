@@ -17,6 +17,7 @@ margin: 0 auto;
 `
 
 const GeneratedPassword = styled.div`
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,12 +26,18 @@ const GeneratedPassword = styled.div`
   background-color: var(--color-dark-grey);
   color: var(--color-almost-white);
   margin: 16px 0;
-  font-size: 24px;
+  font-size: 18px;
+  @media (min-width: 475px) {
+    font-size: 24px;
+  }
+
+
   @media (min-width: 768px) {
     margin: 32px 0 24px;
     padding-inline: 32px;
     font-size: 32px;
     }
+    
 `;
 
 const PasswordContainer = styled.div`
@@ -257,7 +264,7 @@ const PasswordGenerator = () => {
     <PasswordGeneratorContainer>
     <h1>Password Generator</h1>
       {generatedPassword ? (
-        <GeneratedPassword>{generatedPassword} <CopyToClipboard password={generatedPassword} /> {/* Use the CopyToClipboard component */}</GeneratedPassword>
+        <GeneratedPassword characterLength={characterLength}>{generatedPassword} <CopyToClipboard password={generatedPassword} /> {/* Use the CopyToClipboard component */}</GeneratedPassword>
       ) : (
         <GeneratedPassword> <h4>P4$5W0rD!</h4> <CopyToClipboard/> </GeneratedPassword>
       )}
