@@ -4,7 +4,7 @@ import ClipboardJS from 'clipboard';
 import copyIcon from '../assets/images/icon-copy.svg'
 
 const CopyIconImage = styled.img`
-  height: 20px;
+  height: 1.25rem;
   cursor: pointer;
   transition: filter 0.6s; // Add a transition for a smooth effect
   @media(hover: hover) and (pointer: fine) {
@@ -14,7 +14,7 @@ const CopyIconImage = styled.img`
   }
 
   @media (min-width: 768px) {
-   height: 24px;
+   height: 1.5rem;
     }
 `;
 

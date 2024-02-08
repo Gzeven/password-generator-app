@@ -18,19 +18,21 @@ const ModalContent = styled.div`
   transform: translate(-50%, -50%);
   background-color: var(--color-dark-grey);
   color: var(--color-almost-white);
-  padding: 20px;
-  border-radius: 4px;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  
   /* Add other styles for your modal content */
 `;
 
 const ModalButton = styled.button`
 border: none;
-margin-top: 16px;
-height: 56px;
+margin-top: 1rem;
+height: 3.5rem;
 width: 100%;
 background-color: var(--color-neon-green);
 color: var(--color-dark-grey);
-font-size: 16px;
+font-size: 1rem;
+cursor: pointer;
 
 `
 

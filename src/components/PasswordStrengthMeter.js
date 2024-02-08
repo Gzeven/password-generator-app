@@ -6,12 +6,12 @@ const StrengthMeterContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: var(--color-very-dark-grey);
-  height: 56px;
-  padding: 0 16px;
+  height: 3.5rem;
+  padding: 0 1rem;
   @media (min-width: 768px) {
-    height: 72px;
-    padding: 0 32px;
-    margin-top: 32px;
+    height: 4.5rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
    }
 `;
 
@@ -20,32 +20,29 @@ const StrengthBarsContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  gap: 8px; // Create a gap between bars
+  gap: 0.5rem; // Create a gap between bars
 `;
 
-const StrengthText = styled.h1`
-/* justify-content: flex-start; */
-color: var(--color-grey);
-font-size: 16px;
+const StrengthText = styled.h3`
+font-size: 1rem;
 @media (min-width: 768px) {
-   font-size: 18px;
+   font-size: 1.125rem;
    }
 `
 
 
-const StrengthIndication = styled.h2`
-color: var(--color-almost-white);
-font-size: 16px;
-margin-right: 8px;
+const StrengthIndication = styled.h4`
+font-size: 1.125rem;
+margin-right: 0.5rem; 
 @media (min-width: 768px) {
-    font-size: 24px;
+    font-size: 1.5rem;
    }
 `
 
 const StrengthBar = styled.div`
-  width: 10px;
-  height: 28px;
-  border: 1px solid ${({ $strengthColor }) => $strengthColor || 'var(--color-almost-white)'};
+  width: 0.625rem;
+  height: 1.75rem;
+  border: 0.0625rem solid ${({ $strengthColor }) => $strengthColor || 'var(--color-almost-white)'};
   background-color: ${({ $strengthColor }) => $strengthColor};
  
 `;
